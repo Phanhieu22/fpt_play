@@ -48,14 +48,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.container {
-  height: 200vh;
+#container {
+  background-color: rgba(17, 17, 17, 0.9);
 }
 header {
   width: 100vw;
 
   background-color: #111;
   position: fixed;
+  z-index: 999;
   top: 0;
   .navMain {
     width: 1080px;
@@ -227,5 +228,39 @@ header {
   }
 }
 .content {
-  margin: 112px;
+  margin-top: 112px;
+  height: 400vh;
+  width: 1180px;
+  margin: 0 auto;
+
+  .ads {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .banner {
+    > .swiper {
+      height: 50%;
+    }
+  }
+  .sport {
+    margin-top: 4%;
+    > .swiper {
+      height: auto;
+      background-color: #9b9b9b;
+      .swiper-wrapper {
+        .swiper-slide {
+          background-color: rgba(17, 17, 17, 0.9);
+
+          img {
+            width: 25%;
+          }
+        }
+        .swiper-slide img:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
 }

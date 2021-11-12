@@ -84,16 +84,86 @@
         </nav>
       </header>
       <div class="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur sunt
-        voluptates voluptatibus consectetur sit obcaecati facilis, commodi enim
-        nostrum asperiores facere sequi cum eius porro consequatur pariatur
-        reiciendis quia.
+        <!-- ads start -->
+        <div class="ads">
+          <img href="https://fptplay.vn/" src="./img/Q_C.jpg" alt="banner" />
+        </div>
+        <!--ads end -->
+
+        <!-- banner start -->
+        <div class="banner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./img/phuong-trinh-tinh-yeu-fpt-play-banner_09-11-2021_15g59-03.webp"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/khi-man-dem-gon-song-fpt-play-doc-quyen-banner10-11-2021_12g04-58.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="sport">
+          <h3>thể thao</h3>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./img/hoang_duc_vs_japan_wcq12-11-2021_15g47-12.webp"
+                  alt=""
+                />
+                <img src="./img/artboard-112-11-2021_16g08-15.webp" alt="" />
+                <img
+                  src="./img/tan_truong_vs_japan_wcq12-11-2021_15g15-48.webp"
+                  alt=""
+                />
+                <img
+                  src="./img/hoang_duc_vs_japan_wcq12-11-2021_15g47-12.webp"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
