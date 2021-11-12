@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>fpt play</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./data/grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./data/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+
+  <body>
+    <div id="container" class="grid">
+      <header>
+        <div class="navMain">
+          <div class="logo"></div>
+          <div class="navMainLink">
+            <img class="img1" src="./img/download-app.png" alt="" />
+            <img src="./img/dang-ky-thue-bao-2.png" alt="" />
+          </div>
+          <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="buyPackage">
+            <div>
+              <a href="#muagoi">MUA GÓI</a>
+            </div>
+          </div>
+          <div class="login">
+            <a href="#đăng nhập">Đăng nhập</a>
+          </div>
+          <div class="btnSubNav" id="btnSubNav">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div id="coating">
+            <div id="subNav">
+              <ul class="listSubNav">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Truyền hình</a></li>
+                <li><a href="">GBO GO</a></li>
+                <li><a href="">Phim bộ</a></li>
+                <li><a href="">Thể thao</a></li>
+                <li><a href="">Anime</a></li>
+                <li><a href="">TV show</a></li>
+                <li><a href="">Phim lẻ</a></li>
+                <li><a href="">Phim chiếu rạp</a></li>
+                <li><a href="">Gói đắc sắc</a></li>
+                <li><a href="">Thiếu nhi</a></li>
+                <li><a href="">Edumaill</a></li>
+                <li><a href="">Học online</a></li>
+                <li><a href="">Mua gói</a></li>
+                <li><a href="">Đăng kí thuê bao</a></li>
+                <li><a href="">Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="listNav">
+            <li><a class="navLink" href="">Trang chủ</a></li>
+            <li><a class="navLink" href="">Truyền hình</a></li>
+            <li><a class="navLink" href="">GBO GO</a></li>
+            <li><a class="navLink" href="">Phim bộ</a></li>
+            <li><a class="navLink" href="">Thể thao</a></li>
+            <li><a class="navLink" href="">Anime</a></li>
+            <li><a class="navLink" href="">TV show</a></li>
+            <li><a class="navLink" href="">Phim lẻ</a></li>
+            <li class="hiden"><a class="navLink" href="">Phim chiếu rạp</a></li>
+            <li class="hiden"><a class="navLink" href="">Gói đắc sắc</a></li>
+            <li><a class="navLink" href="">Xem thêm</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur sunt
+        voluptates voluptatibus consectetur sit obcaecati facilis, commodi enim
+        nostrum asperiores facere sequi cum eius porro consequatur pariatur
+        reiciendis quia.
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

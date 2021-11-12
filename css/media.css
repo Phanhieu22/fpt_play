@@ -1,0 +1,99 @@
+@media only screen and (min-width: 0) {
+  .navMainLink > img {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .buyPackage {
+    display: none;
+  }
+  .logo {
+    left: 40%;
+    top: 10px;
+  }
+  .login {
+    display: none;
+  }
+  header {
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navMainLink > img {
+    display: block;
+    width: 217px;
+    height: 38px;
+  }
+  .btnSubNav {
+    display: none;
+  }
+  nav {
+    width: 80% !important;
+    height: 33px;
+    display: block;
+  }
+  .hiden {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .navMain {
+    width: 80% !important;
+    height: 64px;
+  }
+  .search {
+    display: block;
+  }
+  .buyPackage {
+    display: block;
+  }
+  .logo {
+    top: 10px;
+    left: 10px;
+  }
+  .login {
+    display: block;
+  }
+  header {
+    height: 112px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navMainLink > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .navMain {
+    width: 75%;
+    height: 64px;
+  }
+  nav {
+    width: 1080px;
+    height: 64px;
+    display: block;
+  }
+  .hiden {
+    display: block;
+  }
+  input {
+    height: 30px;
+    width: 168px;
+    display: block;
+  }
+  .search {
+    display: block;
+  }
+  .login {
+    margin-left: 0.9%;
+  }
+  header {
+    height: 112px;
+  }
+}
