@@ -309,6 +309,26 @@ header nav {
 
 .banner {
   background-color: red;
-  height: 500px;
+  width: 100%;
+}
+
+.banner .swiper {
+  width: 100%;
+}
+
+.banner .swiper .swiper-wrapper {
+  width: 100%;
+}
+
+.banner .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+
+.banner .swiper .swiper-wrapper .swiper-slide > a {
+  width: 100%;
+}
+
+.banner .swiper .swiper-wrapper .swiper-slide > a img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

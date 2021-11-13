@@ -25,6 +25,9 @@
     margin-top: 64px;
     width: 90%;
   }
+  .banner {
+    height: 28.18vh !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -71,6 +74,9 @@
     margin-top: 112px;
     width: 70%;
   }
+  .banner {
+    height: 29vh !important;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .navMainLink > img {
@@ -108,7 +114,7 @@
     width: 73.75rem;
   }
   .banner {
-    height: 34.375rem;
+    height: 34.375rem !important;
     width: 100%;
   }
 }

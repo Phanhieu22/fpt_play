@@ -246,5 +246,20 @@ header {
 }
 .banner {
   background-color: red;
-  height: 500px;
+  width: 100%;
+  .swiper {
+    width: 100%;
+    .swiper-wrapper {
+      width: 100%;
+      .swiper-slide {
+        width: 100%;
+        > a {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
