@@ -18,6 +18,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./data/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./data/owlcarousel/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
 
@@ -132,12 +140,57 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
+        <!-- item -->
+        <h3>sport</h3>
+        <div class="slider-item">
+          <div class="owl-carousel">
+            <div>
+              <img
+                src="./img/tan_truong_vs_japan_wcq12-11-2021_15g15-48.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="./img/hoang_duc_vs_japan_wcq12-11-2021_15g47-12.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./img/phap-kazakhstan13-11-2021_21g44-06.webp" alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/bn_cris-cyborg-vs-sinead-kavanagh-27112-11-2021_17g15-02.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./img/nauy-latvia13-11-2021_21g46-27.webp" alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/highlights-main-card-27113-11-2021_13g19-23.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="./img/b271_ko_final_bellator_vod13-11-2021_13g55-52.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./data/owlcarousel/owl.carousel.min.js"></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper1 = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
@@ -153,6 +206,30 @@
           delay: 3000,
           disableOnInteraction: true,
         },
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 2,
+              nav: true,
+            },
+            922: {
+              items: 2,
+              nav: false,
+            },
+            1200: {
+              items: 4,
+              nav: true,
+              loop: false,
+            },
+          },
+        });
       });
     </script>
     <script src="./js/main.js"></script>

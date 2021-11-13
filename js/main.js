@@ -20,6 +20,5 @@ coating.onclick = function () {
 var state = {
   coating: false,
   subNav: false,
+  col: 4,
 };
-
-console.log(state);
