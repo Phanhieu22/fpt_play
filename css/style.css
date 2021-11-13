@@ -48,10 +48,6 @@ body {
   margin-right: auto;
 }
 
-#container {
-  background-color: rgba(17, 17, 17, 0.9);
-}
-
 header {
   width: 100vw;
   background-color: #111;
@@ -292,39 +288,27 @@ header nav {
 
 .content {
   margin-top: 112px;
-  height: 400vh;
+  height: 100vh;
   width: 1180px;
   margin: 0 auto;
+  border: 1px dashed black;
+  position: relative;
 }
 
-.content .ads img {
+.content .ads {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
-.content .banner > .swiper {
-  height: 50%;
+.content .ads a {
+  width: 100%;
 }
 
-.content .sport {
-  margin-top: 4%;
+.content .ads a img {
+  width: 100%;
 }
 
-.content .sport > .swiper {
-  height: auto;
-  background-color: #9b9b9b;
-}
-
-.content .sport > .swiper .swiper-wrapper .swiper-slide {
-  background-color: rgba(17, 17, 17, 0.9);
-}
-
-.content .sport > .swiper .swiper-wrapper .swiper-slide img {
-  width: 25%;
-}
-
-.content .sport > .swiper .swiper-wrapper .swiper-slide img:not(:last-child) {
-  margin-right: 15px;
+.banner {
+  background-color: red;
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */
