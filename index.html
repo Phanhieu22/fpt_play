@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <div id="container" class="grid">
+    <div id="container">
       <header>
         <div class="navMain">
           <div class="logo"></div>
@@ -141,53 +141,61 @@
           </div>
         </div>
         <!-- item -->
-        <h3>sport</h3>
+
         <div class="slider-item">
-          <div class="owl-carousel">
-            <div>
-              <img
-                src="./img/tan_truong_vs_japan_wcq12-11-2021_15g15-48.webp"
-                alt=""
-              />
+          <h3>Thể Thao</h3>
+          <div class="owl-carousel" id="carousel1"></div>
+        </div>
+
+        <!-- anime -->
+        <div class="slider-item">
+          <h3>Phim Bộ</h3>
+          <div class="owl-carousel" id="carousel2"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="content">
+          <div class="iconInfo">
+            <img src="./img/logo-2.png" alt="" />
+            <img src="./img/logo-sale-noti.png" alt="" />
+            <img src="./img/dmca_protected_sml_120n.png" alt="" />
+          </div>
+          <div class="info">
+            <p>
+              Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt
+              Anh
+            </p>
+            <p>
+              Trụ sở: Tầng 8, tòa nhà FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy,
+              Hà Nội
+            </p>
+            <p>Điện thoại: 19006600. Email: support@fptplay.net</p>
+            <p>
+              Số giấy chứng nhận đăng ký kinh doanh: 0101778163 do Sở Kế Hoạch
+              Đầu Tư Thành Phố Hà Nội cấp vào ngày 28/07/2005
+            </p>
+            <p>
+              Giấy phép Cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng
+              Internet số 568/GP-BTTTT cấp ngày 7/12/2020.
+            </p>
+          </div>
+          <div class="contact">
+            <div class="fb">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
             </div>
-            <div>
-              <img
-                src="./img/hoang_duc_vs_japan_wcq12-11-2021_15g47-12.webp"
-                alt=""
-              />
+            <div class="suppost">
+              Hỗ trợ<i class="fa fa-commenting-o" aria-hidden="true"></i>
             </div>
-            <div>
-              <img src="./img/phap-kazakhstan13-11-2021_21g44-06.webp" alt="" />
-            </div>
-            <div>
-              <img
-                src="./img/bn_cris-cyborg-vs-sinead-kavanagh-27112-11-2021_17g15-02.webp"
-                alt=""
-              />
-            </div>
-            <div>
-              <img src="./img/nauy-latvia13-11-2021_21g46-27.webp" alt="" />
-            </div>
-            <div>
-              <img
-                src="./img/highlights-main-card-27113-11-2021_13g19-23.webp"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="./img/b271_ko_final_bellator_vod13-11-2021_13g55-52.webp"
-                alt=""
-              />
+            <div class="numberPhone">
+              <i class="fa fa-phone" aria-hidden="true"> 0394337519 </i>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./data/owlcarousel/owl.carousel.min.js"></script>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper1 = new Swiper(".mySwiper", {
@@ -210,23 +218,39 @@
     </script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $("#carousel1").owlCarousel({
           loop: true,
           margin: 10,
+          nav: false,
+          items: 4,
           responsiveClass: true,
           responsive: {
             0: {
               items: 2,
-              nav: true,
             },
             922: {
               items: 2,
-              nav: false,
             },
             1200: {
               items: 4,
-              nav: true,
-              loop: false,
+            },
+          },
+        });
+        $("#carousel2").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          items: 6,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            922: {
+              items: 4,
+            },
+            1200: {
+              items: 6,
             },
           },
         });

@@ -13,7 +13,7 @@
   }
   .logo {
     left: 40%;
-    top: 10px;
+    top: 30%;
   }
   .login {
     display: none;
@@ -23,13 +23,53 @@
   }
   .content {
     margin-top: 64px;
+    font-size: 10px;
     width: 90%;
   }
   .banner {
-    height: 28.18vh !important;
+    height: 20.18vh !important;
+  }
+  footer {
+    width: 100%;
+  }
+  footer > .content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .iconInfo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .iconInfo > img {
+    margin: auto;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+  .contact > div {
+    margin: auto;
   }
 }
-
+@media only screen and (max-width: 992px) {
+  .swiper-button-next.swiper-button-prev {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .navMainLink > img {
     display: block;
@@ -73,9 +113,13 @@
   .content {
     margin-top: 112px;
     width: 70%;
+    font-size: 16px;
   }
   .banner {
     height: 29vh !important;
+  }
+  .iconInfo {
+    display: flex;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -112,9 +156,27 @@
   }
   .content {
     width: 73.75rem;
+    font-size: 16px;
   }
   .banner {
     height: 34.375rem !important;
     width: 100%;
+  }
+  footer > .content {
+    display: flex;
+
+    flex-direction: row;
+  }
+  footer > .content > .iconInfo {
+    width: 20% !important;
+  }
+  footer > .content > .info {
+    width: 60% !important;
+  }
+  footer > .content > .contact {
+    width: 20% !important;
+  }
+  .contact > div {
+    margin: 0;
   }
 }
