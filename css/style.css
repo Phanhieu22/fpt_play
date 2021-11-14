@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper {
@@ -68,8 +68,8 @@ header .navMain {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .navMain .logo {
@@ -111,15 +111,15 @@ header .navMain #coating #subNav {
   overflow-y: scroll;
   display: block;
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 2s;
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
   -webkit-animation: subNav;
-  animation: subNav;
+          animation: subNav;
   -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 header .navMain #coating #subNav .listSubNav {
@@ -145,28 +145,28 @@ header .navMain #coating #subNav .listSubNav li:active a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 @-webkit-keyframes subNav {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes subNav {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -178,7 +178,7 @@ header nav {
 
 .active {
   -webkit-transform: translateX(0px) !important;
-  transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
 }
 
 .blockCoating {
@@ -190,7 +190,7 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .listNav li {
@@ -214,7 +214,7 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .navMainLink img {
@@ -224,7 +224,7 @@ header nav {
 
 .search {
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   line-height: 64px;
 }
 
@@ -262,7 +262,7 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   top: 5px;
   bottom: 0;
   left: 5px;
@@ -311,7 +311,7 @@ header nav {
 .content .ads a img {
   width: 100%;
   -o-object-fit: cover !important;
-  object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 .banner {
@@ -339,7 +339,7 @@ header nav {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-item {
@@ -373,7 +373,7 @@ footer {
   height: 100%;
   width: 100px;
   -webkit-transform: translateY(10px);
-  transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .iconInfo img {
@@ -414,8 +414,8 @@ footer {
 .contact .suppost {
   color: white;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 20px;
   width: 90px;
 }
