@@ -232,6 +232,9 @@ header {
   margin: 0 auto;
   background-color: rgba(17, 17, 17, 0.9);
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 
   .ads {
     width: 100%;
@@ -290,49 +293,72 @@ header {
 footer {
   background-color: rgba(17, 17, 17, 0.9);
   width: 100%;
-}
-.iconInfo {
-  height: 100%;
-  width: 100px;
-  transform: translateY(10px);
-  img {
-    width: 125px;
-    height: 40px;
-    margin: 10px 0;
+  .iconInfo {
+    height: 100%;
+    width: 100px;
+    transform: translateY(10px);
+    img {
+      // width: 125px;
+      // height: 40px;
+      margin: 10px 0;
+    }
   }
-}
-.info {
-  line-height: 20px;
-  p {
+  .info {
     line-height: 20px;
-    color: white;
-    margin: 10px;
+    p {
+      line-height: 20px;
+      color: white;
+      margin: 10px;
+    }
+  }
+  .contact {
+    i {
+      font-size: 2em;
+      color: white;
+    }
+    > div {
+      display: flex;
+      justify-content: center;
+      > .background {
+        background-color: #d95600;
+        margin: 5px 0;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+    }
+
+    .suppost {
+      div {
+        color: white;
+        align-items: center;
+        line-height: 20px;
+        width: 100px;
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        span {
+          display: block;
+          margin-right: 5px;
+        }
+        i {
+          display: block;
+        }
+      }
+    }
+    .numberPhone {
+      width: 250px;
+      font-size: 12px;
+      .background {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+    }
   }
 }
-.contact {
-  i {
-    font-size: 2em;
-    color: white;
-  }
+.fb {
   div {
-    margin: 10px;
-    background-color: orange;
-    border-radius: 20px;
-    font-size: 15px;
-    padding: 5px;
-  }
-  .fb {
-    width: 80px;
-    padding: 5px;
-    text-align: center;
-  }
-  .suppost {
-    color: white;
-    align-items: center;
-    line-height: 20px;
-    width: 90px;
-  }
-  .numberPhone {
-    width: 200px;
+    background-color: #d95600;
+    width: 60px !important;
   }
 }

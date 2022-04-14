@@ -296,6 +296,16 @@ header nav {
   margin: 0 auto;
   background-color: rgba(17, 17, 17, 0.9);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content .ads {
@@ -369,58 +379,87 @@ footer {
   width: 100%;
 }
 
-.iconInfo {
+footer .iconInfo {
   height: 100%;
   width: 100px;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
 
-.iconInfo img {
-  width: 125px;
-  height: 40px;
+footer .iconInfo img {
   margin: 10px 0;
 }
 
-.info {
+footer .info {
   line-height: 20px;
 }
 
-.info p {
+footer .info p {
   line-height: 20px;
   color: white;
   margin: 10px;
 }
 
-.contact i {
+footer .contact i {
   font-size: 2em;
   color: white;
 }
 
-.contact div {
-  margin: 10px;
-  background-color: orange;
-  border-radius: 20px;
+footer .contact > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .contact > div > .background {
+  background-color: #d95600;
+  margin: 5px 0;
   font-size: 15px;
   padding: 5px;
+  border-radius: 20px;
 }
 
-.contact .fb {
-  width: 80px;
-  padding: 5px;
-  text-align: center;
-}
-
-.contact .suppost {
+footer .contact .suppost div {
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   line-height: 20px;
-  width: 90px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.contact .numberPhone {
-  width: 200px;
+footer .contact .suppost div span {
+  display: block;
+  margin-right: 5px;
+}
+
+footer .contact .suppost div i {
+  display: block;
+}
+
+footer .contact .numberPhone {
+  width: 250px;
+  font-size: 12px;
+}
+
+footer .contact .numberPhone .background {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.fb div {
+  background-color: #d95600;
+  width: 60px !important;
 }
 /*# sourceMappingURL=style.css.map */
